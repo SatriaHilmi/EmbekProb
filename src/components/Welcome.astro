@@ -1,4 +1,33 @@
 ---
 import astroLogo from "../assets/astro.svg";
 import background from "../assets/background.svg";
+import deadpool from "../assets/deadpoll.jpg";
+import { Caraousel } from "../components/Caraousel";
 ---
+
+<Caraousel
+    client:load
+    images={[
+        {
+            src: deadpool.src,
+            title: "Deadpool",
+            description: "This is Deadpool",
+        },
+        {
+            src: background.src,
+            title: "Background",
+            description: "This is Background",
+        },
+        { src: astroLogo.src, title: "Astro", description: "This is Astro" },
+    ]}
+    autoSlide={true}
+    slideInterval={6000}
+/>
+
+<div
+    class="h-64 bg-gray-500 flex items-center justify-center img-url['../assets/background.svg'] bg-cover bg-center space-y-4"
+>
+    <h2 class="text-2xl font-bold text-gray-800">
+        Welcome to Embek Probolinggo Farm
+    </h2>
+</div>
