@@ -47,10 +47,10 @@ export const Caraousel: React.FC<CaraouselProps> = ({ images, autoSlide = true, 
                 ))}
             </div>
 
-            <button onClick={prevSlide} className='absolute top-1/2 left-6 -translate-y-1/2 bg-gray-400 px-3 py-2 text-black rounded-full cursor-pointer hover:bg-gray-500'>
+            <button onClick={prevSlide} className='absolute top-1/2 left-6 -translate-y-1/2 bg-gray-400/50 px-3 py-2 text-black rounded-full cursor-pointer hover:bg-gray-500/50'>
                 <ChevronLeft />
             </button>
-            <button onClick={nextSlide} className='absolute top-1/2 right-6 -translate-y-1/2 bg-gray-400 px-3 py-2  text-black rounded-full cursor-pointer hover:bg-gray-500'>
+            <button onClick={nextSlide} className='absolute top-1/2 right-6 -translate-y-1/2 bg-gray-400/50 px-3 py-2  text-black rounded-full cursor-pointer hover:bg-gray-500/50'>
                 <ChevronRight />
             </button>
 

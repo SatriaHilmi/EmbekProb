@@ -1,12 +1,32 @@
 ---
 import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import deadpool from "../assets/deadpoll.jpg";
 
-const title = "Embek Probolinggo Farm";
+const title = "Home Page";
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout title={title}>
+	<Navbar />
 	<Welcome />
+	<div class="relative h-96 w-full mt-15">
+		<div
+			class="absolute inset-0 bg-cover bg-center opacity-50"
+			style={`background-image: url(${deadpool.src})`}
+		>
+		</div>
+		<div class="absolute inset-0 bg-gradient-to-t from-white"></div>
+		<!-- <div class="absolute inset-0 bg-gradient-to-b from-white"></div> -->
+		<div
+			class="relative flex flex-col items-center justify-center h-full font-bebas"
+		>
+			<h1 class="text-green-900 text-6xl font-bold text-center">
+				Overlay dengan gradient
+			</h1>
+			<h1 class="text-green-900 text-4xl font-semibold">Leh Ugaa</h1>
+		</div>
+	</div>
 </Layout>
