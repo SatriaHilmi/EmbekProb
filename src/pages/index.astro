@@ -3,6 +3,8 @@ import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 import deadpool from "../assets/deadpoll.jpg";
+import Card from "../components/Card.astro";
+import MainCard from "../components/MainCard.astro";
 
 const title = "Home Page";
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -24,9 +26,16 @@ const title = "Home Page";
 			class="relative flex flex-col items-center justify-center h-full font-bebas"
 		>
 			<h1 class="text-green-900 text-6xl font-bold text-center">
-				Overlay dengan gradient
+				make your move today
 			</h1>
-			<h1 class="text-green-900 text-4xl font-semibold">Leh Ugaa</h1>
+			<h1 class="text-green-900 text-4xl font-semibold">
+				fresh in our farm
+			</h1>
 		</div>
 	</div>
+
+	<div class="max-w-7xl mx-auto p-6 -mt-25">
+		<MainCard />
+	</div>
+	<Card />
 </Layout>
