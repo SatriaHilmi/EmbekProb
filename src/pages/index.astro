@@ -6,6 +6,7 @@ import deadpool from "../assets/deadpoll.jpg";
 import Card from "../components/Card.astro";
 import MainCard from "../components/MainCard.astro";
 const title = "Home Page";
+import { Handshake } from "lucide-react";
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -37,49 +38,93 @@ const title = "Home Page";
 		<MainCard />
 	</div>
 	<Card />
-	<div class="relative h-72 w-full mt-40">
+	<div class="relative w-full mt-50">
 		<div
-			class="absolute inset-0 bg-cover bg-center opacity-50"
+			class="h-72 bg-cover bg-center opacity-50"
 			style={`background-image: url(${deadpool.src})`}
 		>
 		</div>
 		<div class="absolute inset-0 bg-gradient-to-t from-white"></div>
+
+		<div class="absolute inset-0 flex flex-col justify-center px-5 -mt-96">
+			<div
+				class="uppercase font-extrabold leading-tight font-bebas text-green-800"
+			>
+				<span>|</span>
+				<h2 class="text-2xl sm:text-3xl md:text-4xl">2025 impact</h2>
+				<h2 class="text-2xl sm:text-3xl md:text-4xl">impact-driven</h2>
+			</div>
+		</div>
 	</div>
+
 	<div
-		class="flex flex-col items-start text-start uppercase font-extrabold leading-tight px-5 my-2 font-bebas text-green-800 absolute -mt-96"
+		class="flex flex-col lg:flex-row justify-center items-center gap-4 py-10 px-5 relative -mt-65 text-center"
 	>
-		<span>|</span>
-		<h2 class="text-4xl">2025 impact</h2>
-		<h2 class="text-4xl">impact-driven</h2>
-	</div>
-	<div
-		class="flex justify-center items-center text-center gap-4 py-5 px-5 -mt-70 absolute"
-	>
-		<div class="rounded-xl bg-amber-300 max-w-xl mx-auto -mt-12 lg:mt-12">
-			<h2>hai</h2>
-			<p>
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
-				porro fuga molestias ullam quo ipsa est cumque officiis id quis
-				perferendis tempora, dolores voluptatum tenetur sequi quas
-				libero placeat accusamus.
+		<div class="rounded-xl bg-amber-300 w-full lg:max-w-sm p-6">
+			<h2 class="font-bold mb-3">
+				<span
+					class="inline-block w-30 h-30 bg-center bg-contain bg-no-repeat"
+					style="background-image: url('/handshake.png')"></span>
+			</h2>
+			<h2 class="font-bold mb-3 text-4xl font-bebas">world</h2>
+			<p class="flex-1">
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum,
+				alias aut molestiae in optio laudantium facilis cum velit
+				tenetur enim soluta tempora, voluptas culpa neque saepe ex quis
+				aperiam, placeat sequi? Fugit quisquam eius recusandae ex minima
+				veritatis sed libero nesciunt ipsa, sint in? Delectus ad dolores
+				exercitationem qui cumque! Consequatur quasi soluta beatae,
+				earum impedit velit. Earum voluptatibus officiis iste,
+				reiciendis ad minus qui. Cupiditate odio amet unde quam itaque
+				officia vel error ullam, repellendus excepturi dolorem eaque
+				suscipit doloremque porro, delectus dolorum aperiam temporibus
+				at eius eos nisi incidunt. Odit et tempora autem aperiam sit
+				doloremque voluptate ipsam?
 			</p>
 		</div>
-		<div class="rounded-xl bg-amber-300 max-w-xl mx-auto -mt-12 lg:mt-12">
-			<h2>hai</h2>
-			<p>
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
-				porro fuga molestias ullam quo ipsa est cumque officiis id quis
-				perferendis tempora, dolores voluptatum tenetur sequi quas
-				libero placeat accusamus.
+		<div class="rounded-xl bg-amber-300 w-full lg:max-w-sm p-6">
+			<h2 class="font-bold mb-3">
+				<span
+					class="inline-block w-30 h-30 bg-center bg-contain bg-no-repeat"
+					style="background-image: url('/health-insurance.png')"
+				></span>
+			</h2>
+			<h2 class="font-bold mb-3 text-4xl font-bebas">health</h2>
+			<p class="flex-1">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+				ab ipsa, dolor voluptas rem error enim consequuntur natus sequi
+				ex suscipit, aliquid, exercitationem eligendi nisi eum fugiat
+				minus dolorem in dignissimos temporibus rerum atque iure?
+				Dolorem id adipisci a ullam temporibus nostrum neque tempore eos
+				porro harum dolore inventore maiores, earum placeat odio
+				voluptatem corporis consectetur laboriosam consequatur modi
+				deleniti quam hic? Quidem voluptas quo soluta, eaque iusto error
+				officia velit ipsa, ullam libero dolorem similique doloribus
+				officiis laborum quisquam accusamus! Eaque sunt minima a facilis
+				aut suscipit, mollitia, vel hic sequi nulla fuga quae quo odio
+				rem cupiditate labore.
 			</p>
 		</div>
-		<div class="rounded-xl bg-amber-300 max-w-xl mx-auto -mt-12 lg:mt-12">
-			<h2>hai</h2>
-			<p>
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
-				porro fuga molestias ullam quo ipsa est cumque officiis id quis
-				perferendis tempora, dolores voluptatum tenetur sequi quas
-				libero placeat accusamus.
+		<div class="rounded-xl bg-amber-300 w-full lg:max-w-sm p-6">
+			<h2 class="font-bold mb-3">
+				<span
+					class="inline-block w-30 h-30 bg-center bg-contain bg-no-repeat"
+					style="background-image: url('/cash-flow.png')"></span>
+			</h2>
+			<h2 class="font-bold mb-3 text-4xl font-bebas">economy</h2>
+			<p class="flex-1">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+				ab ipsa, dolor voluptas rem error enim consequuntur natus sequi
+				ex suscipit, aliquid, exercitationem eligendi nisi eum fugiat
+				minus dolorem in dignissimos temporibus rerum atque iure?
+				Dolorem id adipisci a ullam temporibus nostrum neque tempore eos
+				porro harum dolore inventore maiores, earum placeat odio
+				voluptatem corporis consectetur laboriosam consequatur modi
+				deleniti quam hic? Quidem voluptas quo soluta, eaque iusto error
+				officia velit ipsa, ullam libero dolorem similique doloribus
+				officiis laborum quisquam accusamus! Eaque sunt minima a facilis
+				aut suscipit, mollitia, vel hic sequi nulla fuga quae quo odio
+				rem cupiditate labore.
 			</p>
 		</div>
 	</div>
