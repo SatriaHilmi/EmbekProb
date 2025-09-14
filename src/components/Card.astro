@@ -1,88 +1,62 @@
 ---
-function shuffleArray(array: { src: string; alt: string }[]) {
-    let newArray = [...array];
-    for (let i = newArray.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
-    }
-    return newArray;
-}
+import textile from "../assets/textile.jpg";
 
-const rawCards = [
-    {
-        src: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-        alt: "Farm",
-    },
-    {
-        src: "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba",
-        alt: "People",
-    },
-    {
-        src: "https://images.unsplash.com/photo-1464226184884-fa280b87c399",
-        alt: "Farm work",
-    },
-    {
-        src: "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
-        alt: "Tractor",
-    },
-    {
-        src: "https://images.unsplash.com/photo-1508672019048-805c876b67e2",
-        alt: "Vegetables",
-    },
-    {
-        src: "https://images.unsplash.com/photo-1504593811423-6dd665756598",
-        alt: "Nature",
-    },
-];
-
-// shuffle supaya acak setiap reload
-const cards = shuffleArray(rawCards);
+const leftImg =
+    "https://siskiyoufarmco.com/wp-content/uploads/2024/08/collage-home-left-update.png";
+const rightImg =
+    "https://siskiyoufarmco.com/wp-content/uploads/2024/08/collage-home-right.png";
 ---
 
-<div class="max-w-7xl mx-auto px-6 py-12">
+<div class="max-w-7xl mx-auto px-4 lg:px-0 relative">
     <div
-        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-[220px]"
+        class="grid grid-cols-1 lg:grid-cols-3 items-center gap-8 relative my-10"
     >
-        <!-- kartu acak pertama -->
-        {
-            cards.slice(0, 4).map((card) => (
-                <div class="rounded-2xl overflow-hidden shadow-lg">
-                    <img
-                        src={card.src}
-                        alt={card.alt}
-                        class="w-full h-full object-cover"
-                    />
-                </div>
-            ))
-        }
-
-        <!-- middle card di tengah -->
-        <div
-            class="row-span-2 col-span-2 bg-green-900 rounded-2xl shadow-xl flex flex-col items-center justify-center p-8 text-center text-white order-none"
-        >
-            <h2 class="text-2xl font-bold mb-4">Our Vision</h2>
-            <p class="mb-6">
-                Connecting farmers, entrepreneurs, and shoppers in a sustainable
-                way.
-            </p>
-            <button
-                class="px-6 py-3 bg-white text-green-900 font-bold rounded-full shadow-md hover:scale-105 transition"
-            >
-                Learn More
-            </button>
+        <!-- Left image -->
+        <div class="hidden lg:block pt-12 relative z-10">
+            <img
+                src={leftImg}
+                alt="Left collage"
+                class="w-full h-auto object-cover rounded-2xl"
+                loading="lazy"
+            />
         </div>
 
-        <!-- kartu acak sisanya -->
-        {
-            cards.slice(4).map((card) => (
-                <div class="rounded-2xl overflow-hidden shadow-lg">
-                    <img
-                        src={card.src}
-                        alt={card.alt}
-                        class="w-full h-full object-cover"
-                    />
+        <!-- Middle card (z-0 biar di belakang gambar) -->
+        <div class="relative z-0 -mt-12 lg:-mt-0">
+            <div
+                class="rounded-2xl shadow-xl md:px-12 py-12 text-center max-w-xl mx-auto"
+                style={`background-image: url(${textile.src}); background-size:cover; background-position:center;`}
+            >
+                <div
+                    class="flex flex-col justify-center items-center px-5 pb-10 text-center"
+                >
+                    <div class="max-w-2xl">
+                        <h2
+                            class="font-extrabold text-green-800 text-4xl md:text-7xl mb-6 text-start px-2 font-bebas"
+                        >
+                            LET’S <br /> DO THIS <span class="text-green-600"
+                                >TOGETHER</span
+                            >
+                        </h2>
+                        <p class="text-gray-700 text-lg mb-5">
+                            Embek Probolinggo Farm has a new farm at Laweyan -
+                            Probolinggo, since at 2025 we have independen farm
+                            at village. And contributing for loot people with
+                            milk and breeding farm. Come on join with us!
+                        </p>
+                    </div>
                 </div>
-            ))
-        }
+            </div>
+        </div>
+
+        <!-- Right image -->
+        <div class="hidden lg:block pt-12 relative z-10">
+            <img
+                src={rightImg}
+                alt="Right collage"
+                class="w-full h-auto object-cover rounded-2xl"
+                loading="lazy"
+            />
+        </div>
     </div>
 </div>
