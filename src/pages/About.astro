@@ -4,8 +4,7 @@ import Navbar from "../components/Navbar.astro";
 import Footer from "../components/footer.astro";
 import deadpool from "../assets/deadpoll.jpg";
 import MainCard2 from "../components/MainCard2.astro";
-import Work from "../components/Work.astro";
-import ManualSlider from "../components/ManualSlider";
+import { Slider } from "../components/Slider";
 const title = "About Page";
 ---
 
@@ -50,8 +49,5 @@ const title = "About Page";
     <div class="max-w-7xl mx-auto mt-50 md:mt-40 relative">
         <MainCard2 />
     </div>
-    <!-- <ManualSlider /> -->
-    <!-- <Work /> -->
-    <!-- <a href="/">Go to Home</a> -->
-    <!-- <Footer /> -->
+    <Slider client:load />
 </Layout>
