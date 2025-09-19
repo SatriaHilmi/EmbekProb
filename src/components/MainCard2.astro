@@ -1,0 +1,65 @@
+---
+import textile from "../assets/textile.jpg";
+
+const leftImg =
+    "https://siskiyoufarmco.com/wp-content/uploads/2024/08/collage-home-left-update.png";
+const rightImg =
+    "https://siskiyoufarmco.com/wp-content/uploads/2024/08/collage-home-right.png";
+---
+
+<div class="max-w-7xl mx-auto px-4 lg:px-0 relative">
+    <div
+        class="grid grid-cols-1 lg:grid-cols-3 items-center gap-8 relative my-10"
+    >
+        <!-- Left image -->
+        <div class="hidden lg:block pt-12 relative z-10">
+            <img
+                src={leftImg}
+                alt="Left collage"
+                class="w-full h-auto object-cover rounded-2xl"
+                loading="lazy"
+            />
+        </div>
+
+        <!-- Middle card (z-0 biar di belakang gambar) -->
+        <div class="relative z-0 -mt-12 lg:-mt-0">
+            <div
+                class="rounded-2xl shadow-xl md:px-12 py-10 text-center max-w-xl mx-auto"
+                style={`background-image: url(${textile.src}); background-size:cover; background-position:center;`}
+            >
+                <div
+                    class="flex flex-col justify-center items-center px-5 pb-5 text-center"
+                >
+                    <div class="max-w-2xl">
+                        <h2
+                            class="font-bold text-teal-500 text-3xl md:text-4xl mb-2 text-center px-2 font-bebas"
+                        >
+                            we commitment in our farm to make stronger community
+                        </h2>
+                        <p class="text-gray-700 text-lg mb-5">
+                            Building a local food system is not for the faint of
+                            heart. We approach every challenge with an
+                            exploratory mindset and an eye on the long term. We
+                            don’t have easy, pre-written solutions to the
+                            challenges we face; we have a constantly evolving,
+                            highly rigorous, and interdisciplinary framework for
+                            solving problems – and it works, because we build
+                            partnerships with folks who know a lot, and grow a
+                            lot.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right image -->
+        <div class="hidden lg:block pt-12 relative z-10">
+            <img
+                src={rightImg}
+                alt="Right collage"
+                class="w-full h-auto object-cover rounded-2xl"
+                loading="lazy"
+            />
+        </div>
+    </div>
+</div>
