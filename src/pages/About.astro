@@ -10,8 +10,7 @@ const title = "About Page";
 
 <Layout title={title}>
     <Navbar />
-    <div class="max-w-4xl mx-auto pt-8 px-2 relative">
-        <!-- gambar -->
+    <div class="max-w-6xl mx-auto pt-8 px-2 relative">
         <img
             src={deadpool.src}
             class="rounded-2xl shadow-2xl w-full relative z-10"
@@ -28,7 +27,9 @@ const title = "About Page";
                 >
                     Deadpool is Here 🎬
                 </h2>
-                <h3 class="text-white text-2xl font-semibold px-4 font-bebas">
+                <h3
+                    class="text-white text-2xl font-semibold px-4 font-bebas text-start"
+                >
                     Meet our-team
                 </h3>
             </div>
@@ -50,4 +51,7 @@ const title = "About Page";
         <MainCard2 />
     </div>
     <Slider client:load />
+    <div class="mt-5">
+        <Footer />
+    </div>
 </Layout>
