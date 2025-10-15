@@ -47,7 +47,7 @@ export const Testimonial: React.FC = () => {
                 {/* <h3 className="text-black font-bold tracking-wide uppercase text-sm">
                     Testimonial
                 </h3> */}
-                <h3 className="text-4xl md:text-5xl font-bold mt-2 text-green-500 font-bebas">
+                <h3 className="text-4xl sm:text-5xl font-bold text-green-500 font-bebas">
                     What Client's Say
                 </h3>
                 <p className="text-gray-600 mt-4 max-w-2xl mx-auto">

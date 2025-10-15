@@ -1,0 +1,80 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/footer.astro";
+const title = "Product Page";
+---
+
+<Layout title={title}>
+    <Navbar />
+    <div class="max-w-6xl mx-auto px-2 mt-5 relative">
+        <h1 class="text-4xl font-bold text-green-800 font-bebas">
+            Our Product
+        </h1>
+        <p class="mt-4 text-lg text-gray-700">
+            Explore our diverse range of fresh and organic products, carefully
+            cultivated to bring the best of nature to your table. From
+            farm-fresh vegetables to wholesome grains, each item is a testament
+            to our commitment to quality and sustainability. Whether you're
+            looking for everyday essentials or specialty items, our product
+            selection is designed to meet your needs while supporting a
+            healthier lifestyle.
+        </p>
+    </div>
+    <div class="max-w-6xl mx-auto mt-50 md:mt-40 mb-5 relative">
+        <h2 class="text-3xl font-bold text-green-800 font-bebas px-5 mb-6">
+            Featured Products
+        </h2>
+        <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-2"
+        >
+            <!-- Example Product Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img
+                    src="https://via.placeholder.com/300x200"
+                    alt="Product 1"
+                    class="w-full h-48 object-cover"
+                />
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-green-800">
+                        Fresh Organic Apples
+                    </h3>
+                    <p class="mt-2 text-gray-600">
+                        Crisp and juicy apples picked at the peak of freshness.
+                    </p>
+                    <p class="mt-2 text-green-700 font-bold">$3.99 / lb</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img
+                    src="https://via.placeholder.com/300x200"
+                    alt="Product 2"
+                    class="w-full h-48 object-cover"
+                />
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-green-800">
+                        Organic Carrots
+                    </h3>
+                    <p class="mt-2 text-gray-600">
+                        Sweet and crunchy carrots, perfect
+                    </p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img
+                    src="https://via.placeholder.com/300x200"
+                    alt="Product 2"
+                    class="w-full h-48 object-cover"
+                />
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-green-800">
+                        Organic Potatoes
+                    </h3>
+                    <p class="mt-2 text-gray-600">
+                        Sweet and crunchy potatoes, perfect
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</Layout>

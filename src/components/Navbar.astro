@@ -36,8 +36,8 @@ const path = Astro.url.pathname.toLowerCase();
                 >ABOUT</a
             ><span>|</span>
             <a
-                href="#services"
-                class="text-gray-600 hover:text-green-900 font-semibold text-lg"
+                href="/product"
+                class={`hover:text-green-900 font-semibold text-lg ${path === "/product" ? "text-green-900" : "text-gray-600"}`}
                 >PRODUCT</a
             ><span>|</span>
             <a
