@@ -1,6 +1,7 @@
 ---
 import { Hamburger } from "./Hamburger";
 import { Contact } from "lucide-react";
+const path = Astro.url.pathname.toLowerCase();
 ---
 
 <div class="sticky top-0 z-50">
@@ -30,8 +31,8 @@ import { Contact } from "lucide-react";
 
         <nav class="hidden md:flex gap-6">
             <a
-                href="/About"
-                class="text-gray-600 hover:text-green-900 font-semibold text-lg"
+                href="/about"
+                class={`hover:text-green-900 font-semibold text-lg ${path === "/about" ? "text-green-900" : "text-gray-600"}`}
                 >ABOUT</a
             ><span>|</span>
             <a

@@ -1,7 +1,7 @@
 ---
-import astroLogo from "../assets/astro.svg";
-import background from "../assets/background.svg";
-import deadpool from "../assets/deadpoll.jpg";
+import embek from "../assets/farm-2.jpg";
+import people1 from "../assets/farm-1.jpg";
+import people2 from "../assets/farm-3.jpg";
 import { Caraousel } from "../components/Caraousel";
 ---
 
@@ -9,16 +9,16 @@ import { Caraousel } from "../components/Caraousel";
     client:load
     images={[
         {
-            src: deadpool.src,
+            src: embek.src,
             title: "Deadpool",
             description: "This is Deadpool",
         },
         {
-            src: background.src,
+            src: people1.src,
             title: "Background",
             description: "This is Background",
         },
-        { src: astroLogo.src, title: "Astro", description: "This is Astro" },
+        { src: people2.src, title: "Astro", description: "This is Astro" },
     ]}
     autoSlide={true}
     slideInterval={6000}

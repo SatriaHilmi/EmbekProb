@@ -38,7 +38,7 @@ export const Caraousel: React.FC<CaraouselProps> = ({ images, autoSlide = true, 
                     <div key={index} className='w-full flex-shrink-0 relative'>
                         <img src={img.src} alt={img.title || `Slide ${index}`} className='object-cover h-96 w-full rounded-2xl' />
                         {(img.title || img.description) && (
-                            <div className='absolute bottom-0 left-0 bg-gradient-to-t from-black/30 to-transparent p-4 w-full rounded-b-2xl'>
+                            <div className='absolute bottom-0 left-0 bg-gradient-to-t from-black/100 to-transparent p-5 w-full rounded-b-2xl'>
                                 <h2 className='text-white text-lg'>{img.title}</h2>
                                 <p className='text-white text-sm'>{img.description}</p>
                             </div>
