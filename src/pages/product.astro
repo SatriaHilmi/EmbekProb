@@ -5,6 +5,8 @@ import Footer from "../components/footer.astro";
 import deadpool from "../assets/deadpoll.jpg";
 import textile from "../assets/textile.jpg";
 import embek from "../assets/embek.jpg";
+import susu from "../assets/MilkCold.jpg";
+import susu2 from "../assets/Milk-2.jpg";
 const title = "Product Page";
 ---
 
@@ -39,12 +41,12 @@ const title = "Product Page";
         <h2 class="text-3xl font-bold text-green-800 font-bebas px-5 mb-6">
             Featured Products
         </h2>
-        <div class="grid grid-cols-1 px-2">
+        <div class="grid grid-cols-1 px-3">
             <div class="bg-white rounded-lg shadow-lg overflow-hidden">
                 <img
-                    src={deadpool.src}
+                    src={susu2.src}
                     alt="Product 1"
-                    class="w-full h-68 object-cover rounded-t-[8px]"
+                    class="w-full h-68 object-cover rounded-t-[8px] object-[center_65%]"
                 />
                 <div class="flex flex-col justify-center items-center p-4">
                     <h3 class="text-lg font-semibold text-green-800">
@@ -57,46 +59,45 @@ const title = "Product Page";
                 </div>
             </div>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-5">
+        <div
+            class="bg-[linear-gradient(120deg,_red_50%,_blue_50%)] shadow-lg flex justify-center mt-10 text-white font-bold p-4 rounded-lg font-bebas text-4xl mx-3"
+        >
+            HOT & COLD
+        </div>
+        <div
+            class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 gap-5 mt-5 pb-20 mx-3"
+        >
             <div class="bg-white rounded-lg shadow-md overflow-hidden">
                 <img
-                    src={deadpool.src}
+                    src={susu.src}
                     alt=""
-                    class="h-60 object-cover rounded-t-[8px]"
+                    class="h-65 object-cover rounded-t-[8px] w-full"
                 />
-                <div class="flex flex-col justify-center items-center p-4">
-                    <p class="font-semibold">
-                        Note: Our product range is continually expanding. Stay
-                        tuned for more exciting additions to our lineup!
+                <div class="flex flex-col p-4">
+                    <p class="font-semibold text-gray-500">
+                        Hot Original Milk.
+                    </p>
+                    <p class="font font-semibold text-green-800">
+                        Rp. 15.000 / Liter
                     </p>
                 </div>
             </div>
             <div class="bg-white rounded-lg shadow-md overflow-hidden">
                 <img
-                    src={deadpool.src}
+                    src={susu.src}
                     alt=""
-                    class="h-60 object-cover rounded-t-[8px]"
+                    class="h-65 object-cover rounded-t-[8px] w-full"
                 />
-                <div class="flex flex-col justify-center items-center p-4">
-                    <p class="font-semibold">
-                        Note: Our product range is continually expanding. Stay
-                        tuned for more exciting additions to our lineup!
+                <div class="flex flex-col p-4">
+                    <p class="font-semibold text-gray-500">
+                        Cold Original Milk.
                     </p>
-                </div>
-            </div>
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <img
-                    src={deadpool.src}
-                    alt=""
-                    class="h-60 object-cover rounded-t-[8px]"
-                />
-                <div class="flex flex-col justify-center items-center p-4">
-                    <p class="font-semibold">
-                        Note: Our product range is continually expanding. Stay
-                        tuned for more exciting additions to our lineup!
+                    <p class="font font-semibold text-green-800">
+                        Rp. 15.000 / Liter
                     </p>
                 </div>
             </div>
         </div>
     </div>
+    <Footer />
 </Layout>
