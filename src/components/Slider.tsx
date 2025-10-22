@@ -48,7 +48,7 @@ export const Slider: React.FC = () => {
     };
 
     return (
-        <div className="relative w-full max-w-6xl mx-auto px-4 py-12">
+        <div className="relative w-full max-w-6xl mx-auto px-4 py-12 mb-10">
             <h2 className="text-4xl sm:text-4xl font-bold mb-6 text-center font-bebas">
                 Our <span className="text-green-600 text-5xl font-bold">Work</span>
             </h2>
