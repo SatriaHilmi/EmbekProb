@@ -69,13 +69,13 @@ export const TestimonialCar: React.FC<Props> = ({ TestimonialCar }) => {
                 ref={scrollRef}
                 className="
                     flex overflow-x-auto snap-x snap-mandatory scroll-smooth
-                    w-full max-w-7xl px-4 py-6 gap-6
+                    w-full max-w-7xl mx-auto py-6 gap-5
                 "
-                style={{
-                    scrollBehavior: "smooth",
-                    scrollbarWidth: "none",
-                    msOverflowStyle: "none",
-                }}
+            // style={{
+            //     scrollBehavior: "smooth",
+            //     scrollbarWidth: "none",
+            //     msOverflowStyle: "none",
+            // }}
             >
                 {TestimonialCar.map((t, i) => (
                     <div

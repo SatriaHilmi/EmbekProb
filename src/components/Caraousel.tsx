@@ -32,13 +32,13 @@ export const Caraousel: React.FC<CaraouselProps> = ({ images, autoSlide = true, 
     }, [autoSlide, nextSlide, slideInterval]);
 
     return (
-        <div className='relative w-full overflow-hidden top-10 px-4'>
-            <div className='flex transition-transform duration-700 ease-in-out gap-4' style={{ transform: `translateX(calc(-${current * 100}% - ${current * 16}px))` }}>
+        <div className='relative w-full overflow-hidden top-10'>
+            <div className='flex transition-transform duration-700 ease-in-out gap-4 scroll-smooth' style={{ transform: `translateX(calc(-${current * 100}% - ${current * 16}px))` }}>
                 {images.map((img, index) => (
                     <div key={index} className='w-full flex-shrink-0 relative'>
-                        <img src={img.src} alt={img.title || `Slide ${index}`} className='object-cover h-96 w-full rounded-2xl' />
+                        <img src={img.src} alt={img.title || `Slide ${index}`} className='object-cover h-96 w-full' />
                         {(img.title || img.description) && (
-                            <div className='absolute bottom-0 left-0 bg-gradient-to-t from-black/100 to-transparent p-5 w-full rounded-b-2xl'>
+                            <div className='absolute bottom-0 left-0 bg-gradient-to-t from-black/100 to-transparent p-5 w-full'>
                                 <h2 className='text-white text-lg'>{img.title}</h2>
                                 <p className='text-white text-sm'>{img.description}</p>
                             </div>
@@ -59,7 +59,7 @@ export const Caraousel: React.FC<CaraouselProps> = ({ images, autoSlide = true, 
                     <div
                         key={index}
                         onClick={() => setCurrent(index)}
-                        className={`h-2 w-2 rounded-full ${index === current ? 'bg-white/90' : 'bg-white/50'}`}
+                        className={`h-2 w-2 rounded-full transition-all ${index === current ? 'bg-white/90 w-5' : 'bg-white/50'}`}
                     />
                 ))}
             </div>

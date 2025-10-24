@@ -7,6 +7,7 @@ import textile from "../assets/textile.jpg";
 import embek from "../assets/embek.jpg";
 import susu from "../assets/MilkCold.jpg";
 import susu2 from "../assets/Milk-2.jpg";
+import { PhoneCall } from "lucide-react";
 const title = "Product Page";
 ---
 
@@ -65,9 +66,11 @@ const title = "Product Page";
             HOT & COLD
         </div>
         <div
-            class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 gap-5 mt-5 pb-20 mx-3"
+            class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 gap-5 mt-5 pb-10 mx-3"
         >
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div
+                class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:scale-102"
+            >
                 <img
                     src={susu.src}
                     alt=""
@@ -82,7 +85,9 @@ const title = "Product Page";
                     </p>
                 </div>
             </div>
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div
+                class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:scale-102"
+            >
                 <img
                     src={susu.src}
                     alt=""
@@ -97,6 +102,23 @@ const title = "Product Page";
                     </p>
                 </div>
             </div>
+        </div>
+        <div
+            class="flex items-center gap-4 cursor-pointer group -mt-5 w-fit rounded-xl mx-2"
+        >
+            <!-- Lingkaran Ikon -->
+            <a
+                href="https://wa.me/6281336111123?text=Halo%20saya%20ingin%20memesan%20produk%20dari%20Embek%20Probolinggo%20Farm"
+                class="w-15 h-15 flex justify-center items-center rounded-full bg-green-500 transition duration-300 group-hover:scale-105"
+            >
+                <PhoneCall className="w-10 h-10 text-white" />
+            </a>
+
+            <p
+                class="text-2xl font-bold font-bebas text-black/60 group-hover:scale-105 transition duration-300"
+            >
+                CALL TO ORDER
+            </p>
         </div>
     </div>
     <Footer />

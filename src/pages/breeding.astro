@@ -1,0 +1,51 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/footer.astro";
+import embek_1 from "../assets/embek-1.jpg";
+import embek_2 from "../assets/embek-2.jpg";
+import embek_3 from "../assets/embek-3.jpg";
+const title = "Breeding Page";
+---
+
+<Layout title={title}>
+    <Navbar />
+    <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-3 p-4">
+        <div class="max-w-6xl mx-auto px-5 py-10">
+            <h1 class="text-4xl font-bold text-green-800 font-bebas mb-6">
+                Breeding Information
+            </h1>
+            <p class="text-lg text-gray-700 mb-4">
+                At Embek Probolinggo Farm, we prioritize ethical and sustainable
+                breeding practices to ensure the health and well-being of our
+                livestock. Our breeding program focuses on selecting superior
+                genetics to enhance productivity, disease resistance, and
+                overall animal welfare. We employ modern techniques while
+                adhering to traditional values, ensuring that our animals are
+                raised in a stress-free environment with ample space, proper
+                nutrition, and regular veterinary care. Our commitment to
+                responsible breeding not only supports the longevity of our farm
+                but also guarantees high-quality products for our customers.
+            </p>
+        </div>
+        <img
+            src={embek_1.src}
+            alt=""
+            class="w-full h-full object-cover rounded-lg"
+        />
+        <div class="grid grid-row s-2 gap-4">
+            <img
+                src={embek_2.src}
+                alt="Anak berkebun"
+                class="w-full h-full object-cover rounded-lg"
+            />
+            <img
+                src={embek_3.src}
+                alt="Jagung segar"
+                class="w-full h-full object-cover rounded-lg"
+            />
+        </div>
+    </div>
+
+    <Footer />
+</Layout>
