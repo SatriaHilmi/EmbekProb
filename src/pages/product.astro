@@ -21,7 +21,9 @@ const title = "Product Page";
         </div>
         <div class="absolute inset-0 bg-gradient-to-t from-white"></div>
         <div class="relative z-10 max-w-6xl mx-auto px-5 py-5">
-            <h1 class="text-4xl font-bold text-green-800 font-bebas">
+            <h1
+                class="text-center text-4xl font-bold text-green-800 font-bebas"
+            >
                 Our Product
             </h1>
             <p
@@ -39,7 +41,9 @@ const title = "Product Page";
         </div>
     </div>
     <div class="max-w-6xl mx-auto md:mt-10 mb-5 relative">
-        <h2 class="text-3xl font-bold text-green-800 font-bebas px-5 mb-6">
+        <h2
+            class="text-3xl font-bold text-green-800 font-bebas px-5 mb-6 text-center"
+        >
             Featured Products
         </h2>
         <div class="grid grid-cols-1 px-3">
@@ -103,23 +107,23 @@ const title = "Product Page";
                 </div>
             </div>
         </div>
-        <div
+        <a
+            href="https://wa.me/6281336111123?text=Halo%20saya%20ingin%20memesan%20produk%20dari%20Embek%20Probolinggo%20Farm"
             class="flex items-center gap-4 cursor-pointer group -mt-5 w-fit rounded-xl mx-2"
         >
             <!-- Lingkaran Ikon -->
-            <a
-                href="https://wa.me/6281336111123?text=Halo%20saya%20ingin%20memesan%20produk%20dari%20Embek%20Probolinggo%20Farm"
+            <div
                 class="w-15 h-15 flex justify-center items-center rounded-full bg-green-500 transition duration-300 group-hover:scale-105"
             >
                 <PhoneCall className="w-10 h-10 text-white" />
-            </a>
+            </div>
 
             <p
                 class="text-2xl font-bold font-bebas text-black/60 group-hover:scale-105 transition duration-300"
             >
                 CALL TO ORDER
             </p>
-        </div>
+        </a>
     </div>
     <Footer />
 </Layout>
