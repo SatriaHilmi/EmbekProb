@@ -3,31 +3,59 @@ import embek_1 from "../assets/embek-1.jpg";
 ---
 
 <div class="mx-auto w-full mb-10">
-    <h2 class="text-4xl font-bold text-green-800 font-bebas text-center">
-        Our Embek
+    <h2 class="text-4xl font-bold font-bebas text-center">
+        Our <span class="text-green-600 text-5xl">Embek</span>
     </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10 px-5">
-        <div class="relative w-full max-w-lg mx-auto">
+
+    <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 px-5"
+    >
+        <!-- Baris 1: Gambar kiri, teks kanan -->
+        <div
+            class="relative w-full max-w-lg mx-auto hover:scale-105 duration-300 order-1"
+        >
             <div
-                class="absolute -top-2 -left-2 w-full h-full bg-gray-500 rounded-xl"
+                class="absolute -top-3 -left-3 w-full h-full bg-gray-500 rounded-xl"
             >
             </div>
             <img
                 src={embek_1.src}
-                alt=""
+                alt="Embek Farm"
                 class="w-full h-auto rounded-lg shadow-lg z-10 relative"
             />
         </div>
-        <p class="text-lg text-gray-700 mt-5">
-            Embek Probolinggo Farm is dedicated to sustainable and ethical
-            breeding practices. Our breeding program focuses on selecting
-            superior genetics to enhance productivity, disease resistance, and
-            overall animal welfare. We employ modern techniques while adhering
-            to traditional values, ensuring that our animals are raised in a
-            stress-free environment with ample space, proper nutrition, and
-            regular veterinary care. Our commitment to responsible breeding not
-            only supports the longevity of our farm but also guarantees
-            high-quality products for our customers.
-        </p>
+        <div class="flex items-center text-center md:text-left order-2">
+            <p class="text-xl text-gray-700 mt-5">
+                Embek Probolinggo Farm is dedicated to sustainable and ethical
+                breeding practices. Our breeding program focuses on selecting
+                superior genetics to enhance productivity, disease resistance,
+                and overall animal welfare.
+            </p>
+        </div>
+
+        <!-- Baris 2: Gambar kanan, teks kiri -->
+        <div
+            class="flex items-center text-center md:text-right order-4 md:order-3"
+        >
+            <p class="text-xl text-gray-700 mt-5">
+                We employ modern techniques while adhering to traditional
+                values, ensuring that our animals are raised in a stress-free
+                environment with ample space, proper nutrition, and regular
+                veterinary care.
+            </p>
+        </div>
+        <div
+            class="relative w-full max-w-lg mx-auto hover:scale-105 duration-300 order-3 md:order-4"
+        >
+            <div
+                class="absolute -top-3 -left-3 w-full h-full bg-gray-500 rounded-xl"
+            >
+            </div>
+            <img
+                src={embek_1.src}
+                alt="Embek Farm"
+                class="w-full h-auto rounded-lg shadow-lg z-10 relative"
+            />
+        </div>
     </div>
 </div>
