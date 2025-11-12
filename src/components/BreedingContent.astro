@@ -4,15 +4,15 @@ import embek_1 from "../assets/embek-1.jpg";
 
 <div class="mx-auto w-full mb-10">
     <h2 class="text-4xl font-bold font-bebas text-center">
-        Our <span class="text-green-600 text-5xl">Embek</span>
+        Our <span class="text-green-600 text-5xl">Animal</span>
     </h2>
 
+    <!-- === CARD 1 === -->
     <div
         class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 px-5"
     >
-        <!-- Baris 1: Gambar kiri, teks kanan -->
         <div
-            class="relative w-full max-w-lg mx-auto hover:scale-105 duration-300 order-1"
+            class="relative w-full max-w-lg mx-auto hover:scale-105 duration-300"
         >
             <div
                 class="absolute -top-3 -left-3 w-full h-full bg-gray-500 rounded-xl"
@@ -24,28 +24,32 @@ import embek_1 from "../assets/embek-1.jpg";
                 class="w-full h-auto rounded-lg shadow-lg z-10 relative"
             />
         </div>
-        <div class="flex items-center text-center md:text-left order-2">
-            <p class="text-xl text-gray-700 mt-5">
+        <div class="flex items-center text-center md:text-left">
+            <p class="text-xl text-gray-700 mt-3">
                 Embek Probolinggo Farm is dedicated to sustainable and ethical
                 breeding practices. Our breeding program focuses on selecting
                 superior genetics to enhance productivity, disease resistance,
                 and overall animal welfare.
             </p>
         </div>
+    </div>
 
-        <!-- Baris 2: Gambar kanan, teks kiri -->
+    <!-- === CARD 2 (gambar kanan) === -->
+    <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 px-5"
+    >
         <div
-            class="flex items-center text-center md:text-right order-4 md:order-3"
+            class="flex items-center text-center md:text-right order-2 md:order-1"
         >
-            <p class="text-xl text-gray-700 mt-5">
+            <p class="text-xl text-gray-700 mt-3">
                 We employ modern techniques while adhering to traditional
-                values, ensuring that our animals are raised in a stress-free
+                values, ensuring our animals are raised in a stress-free
                 environment with ample space, proper nutrition, and regular
                 veterinary care.
             </p>
         </div>
         <div
-            class="relative w-full max-w-lg mx-auto hover:scale-105 duration-300 order-3 md:order-4"
+            class="relative w-full max-w-lg mx-auto hover:scale-105 duration-300 order-1 md:order-2"
         >
             <div
                 class="absolute -top-3 -left-3 w-full h-full bg-gray-500 rounded-xl"
@@ -56,6 +60,32 @@ import embek_1 from "../assets/embek-1.jpg";
                 alt="Embek Farm"
                 class="w-full h-auto rounded-lg shadow-lg z-10 relative"
             />
+        </div>
+    </div>
+
+    <!-- === CARD 3 (gambar kiri lagi) === -->
+    <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 px-5"
+    >
+        <div
+            class="relative w-full max-w-lg mx-auto hover:scale-105 duration-300"
+        >
+            <div
+                class="absolute -top-3 -left-3 w-full h-full bg-gray-500 rounded-xl"
+            >
+            </div>
+            <img
+                src={embek_1.src}
+                alt="Embek Farm"
+                class="w-full h-auto rounded-lg shadow-lg z-10 relative"
+            />
+        </div>
+        <div class="flex items-center text-center md:text-left">
+            <p class="text-xl text-gray-700 mt-3">
+                Our commitment to responsible breeding not only supports the
+                longevity of our farm but also guarantees high-quality products
+                for our customers.
+            </p>
         </div>
     </div>
 </div>

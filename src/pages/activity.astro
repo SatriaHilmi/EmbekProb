@@ -1,0 +1,156 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/footer.astro";
+import Navbar from "../components/Navbar.astro";
+import embek_1 from "../assets/embek-1.jpg";
+const title = "Activity Page";
+---
+
+<Layout title={title}>
+    <Navbar />
+    <div class="max-w-7xl mx-auto py-10 font-bebas">
+        <div
+            class="relative bg-fixed bg-center bg-cover bg-no-repeat"
+            style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFybSUyMGxhbmd1c2F8ZW58MHx8MHx8fDA%3D&w=1000&q=80'); height: 400px;"
+        >
+            <div class="inset-0 absolute bg-black/40 z-10"></div>
+            <h1
+                class="relative items-center text-center text-4xl font-bold pt-5 text-white z-10"
+            >
+                We've Got a Bring Passion Everyday
+            </h1>
+            <div
+                class="relative z-10 w-full pt-20 flex flex-col justify-center items-center text-white"
+            >
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    Our Daily Activities
+                </h2>
+                <p class="text-lg md:text-xl max-w-2xl text-center px-4">
+                    Discover the vibrant daily life at Embek Probolinggo Farm,
+                    where dedication meets nature in perfect harmony.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div
+        class="w-full grid grid-cols-1 md:grid-cols-3 h-[100vh] overflow-hidden mb-10"
+    >
+        <div class="relative overflow-hidden group">
+            <img
+                src={embek_1.src}
+                alt="Animal 1"
+                class="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
+            />
+            <div
+                class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 ease-in-out"
+            >
+                <h3 class="text-green-600 text-3xl font-bold mb-2 font-bebas">
+                    Feeding Time
+                </h3>
+                <p class="text-white text-lg text-center">
+                    Watch our farmers feed and care for the goats daily.
+                </p>
+            </div>
+        </div>
+        <div class="relative overflow-hidden group">
+            <img
+                src={embek_1.src}
+                alt="Animal 1"
+                class="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
+            />
+            <div
+                class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 ease-in-out"
+            >
+                <h3 class="text-green-600 text-3xl font-bold mb-2 font-bebas">
+                    Milking Process
+                </h3>
+                <p class="text-white text-lg text-center">
+                    Learn how we collect fresh, organic milk every morning.
+                </p>
+            </div>
+        </div>
+        <div class="relative overflow-hidden group">
+            <img
+                src={embek_1.src}
+                alt="Animal 1"
+                class="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
+            />
+            <div
+                class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 ease-in-out"
+            >
+                <h3 class="text-green-600 text-3xl font-bold mb-2 font-bebas">
+                    Farm Clean-Up
+                </h3>
+                <p class="text-white text-lg text-center">
+                    Keeping our barns and pastures spotless every day.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="flex justify-end px-5 py-10">
+        <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl"
+        >
+            
+            <div
+                class="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 w-60 sm:w-64"
+            >
+                <img
+                    src="https://images.unsplash.com/photo-1516685304081-de7947d419d1?auto=format&fit=crop&w=500&q=80"
+                    alt="Activity 1"
+                    class="w-full h-28 object-cover"
+                />
+                <div class="p-3">
+                    <h3 class="text-base font-semibold text-green-800">
+                        Feeding Time
+                    </h3>
+                    <p class="text-gray-600 text-xs">
+                        Watch our farmers feed and care for the goats daily.
+                    </p>
+                </div>
+            </div>
+
+            
+            <div
+                class="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 w-60 sm:w-64"
+            >
+                <img
+                    src="https://images.unsplash.com/photo-1528017489092-1db8b3f6a3c0?auto=format&fit=crop&w=500&q=80"
+                    alt="Activity 2"
+                    class="w-full h-28 object-cover"
+                />
+                <div class="p-3">
+                    <h3 class="text-base font-semibold text-green-800">
+                        Milking Process
+                    </h3>
+                    <p class="text-gray-600 text-xs">
+                        Learn how we collect fresh, organic milk every morning.
+                    </p>
+                </div>
+            </div>
+
+            
+            <div
+                class="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 w-60 sm:w-64"
+            >
+                <img
+                    src="https://images.unsplash.com/photo-1598971867125-3a431b2a49d0?auto=format&fit=crop&w=500&q=80"
+                    alt="Activity 3"
+                    class="w-full h-28 object-cover"
+                />
+                <div class="p-3">
+                    <h3 class="text-base font-semibold text-green-800">
+                        Farm Clean-Up
+                    </h3>
+                    <p class="text-gray-600 text-xs">
+                        Keeping our barns and pastures spotless every day.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <Footer />
+</Layout>
