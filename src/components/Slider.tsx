@@ -48,7 +48,7 @@ export const Slider: React.FC = () => {
     };
 
     return (
-        <div className="relative w-full max-w-6xl mx-auto px-4 py-12 mb-10">
+        <div className="relative w-full max-w-6xl mx-auto px-4 py-30 mb-30">
             <h2 className="text-4xl sm:text-4xl font-bold mb-6 text-center font-bebas">
                 Our <span className="text-green-600 text-5xl font-bold">Work</span>
             </h2>
@@ -78,16 +78,16 @@ export const Slider: React.FC = () => {
             </div>
 
             {/* Controls */}
-            <div className="flex justify-center gap-4 mt-15">
+            <div className="flex justify-center gap-20 mt-15">
                 <button
                     onClick={prevSlide}
-                    className="bg-gray-300 px-2 py-2 rounded-full hover:bg-gray-400 cursor-pointer"
+                    className="bg-gray-300 px-2 py-2 rounded-full hover:bg-green-600 cursor-pointer"
                 >
                     <ChevronLeft />
                 </button>
                 <button
                     onClick={nextSlide}
-                    className="bg-gray-300 px-2 py-2 rounded-full hover:bg-gray-400 cursor-pointer"
+                    className="bg-gray-300 px-2 py-2 rounded-full hover:bg-green-600 cursor-pointer"
                 >
                     <ChevronRight />
                 </button>

@@ -89,68 +89,105 @@ const title = "Activity Page";
         </div>
     </div>
 
-    <!-- <div class="flex justify-end px-5 py-10">
-        <div
-            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl"
-        >
-            
-            <div
-                class="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 w-60 sm:w-64"
-            >
+    <div class="flex justify-center items-center">
+        <div class="grid grid-cols-2 md:grid-cols-2 gap-4 w-full mb-10 px-5">
+            <div class="relative overflow-hidden group">
                 <img
-                    src="https://images.unsplash.com/photo-1516685304081-de7947d419d1?auto=format&fit=crop&w=500&q=80"
-                    alt="Activity 1"
-                    class="w-full h-28 object-cover"
+                    src={embek_1.src}
+                    alt="embek"
+                    class="rounded-lg shadow-2xl w-lg h-[500px] object-cover"
                 />
-                <div class="p-3">
-                    <h3 class="text-base font-semibold text-green-800">
-                        Feeding Time
-                    </h3>
-                    <p class="text-gray-600 text-xs">
-                        Watch our farmers feed and care for the goats daily.
-                    </p>
-                </div>
             </div>
-
-            
-            <div
-                class="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 w-60 sm:w-64"
-            >
-                <img
-                    src="https://images.unsplash.com/photo-1528017489092-1db8b3f6a3c0?auto=format&fit=crop&w=500&q=80"
-                    alt="Activity 2"
-                    class="w-full h-28 object-cover"
-                />
-                <div class="p-3">
-                    <h3 class="text-base font-semibold text-green-800">
-                        Milking Process
-                    </h3>
-                    <p class="text-gray-600 text-xs">
-                        Learn how we collect fresh, organic milk every morning.
-                    </p>
-                </div>
-            </div>
-
-            
-            <div
-                class="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 w-60 sm:w-64"
-            >
-                <img
-                    src="https://images.unsplash.com/photo-1598971867125-3a431b2a49d0?auto=format&fit=crop&w=500&q=80"
-                    alt="Activity 3"
-                    class="w-full h-28 object-cover"
-                />
-                <div class="p-3">
-                    <h3 class="text-base font-semibold text-green-800">
-                        Farm Clean-Up
-                    </h3>
-                    <p class="text-gray-600 text-xs">
-                        Keeping our barns and pastures spotless every day.
-                    </p>
-                </div>
+            <div class="relative overflow-hidden group">
+                <h3
+                    class="text-green-600 text-4xl font-bold mb-4 font-bebas text-center"
+                >
+                    We Care for Our Animals & Activities
+                </h3>
+                <p class="text-gray-700 text-lg text-center leading-relaxed">
+                    At Embek Probolinggo Farm, our daily activities revolve
+                    around the well-being of our animals. From feeding and
+                    milking to regular health checks, we ensure that each goat
+                    receives the utmost care and attention. Our dedicated team
+                    works tirelessly to maintain a clean and safe environment,
+                    fostering a healthy and happy herd. Join us in our journey
+                    of compassionate farming and experience the difference that
+                    genuine care makes.
+                </p>
             </div>
         </div>
-    </div> -->
+    </div>
+    <div class="flex justify-center items-center mt-10">
+        <div class="text-center">
+            <h2 class="text-green-600 text-4xl font-bebas font-bold mb-4">
+                We Growth Together
+            </h2>
+        </div>
+    </div>
+    <div class="relative mx-auto max-w-6xl px-4 mt-8 mb-5">
+        <!-- Grid Foto -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <!-- Foto 1 -->
+            <div class="col-span-1 row-span-2">
+                <img
+                    src={embek_1.src}
+                    alt="Gallery 1"
+                    class="w-full h-full object-cover rounded-lg"
+                />
+            </div>
+
+            <!-- Foto 2 -->
+            <div>
+                <img
+                    src={embek_1.src}
+                    alt="Gallery 2"
+                    class="w-full h-full object-cover rounded-lg"
+                />
+            </div>
+
+            <!-- Foto 3 -->
+            <div class="row-span-2">
+                <img
+                    src={embek_1.src}
+                    alt="Gallery 3"
+                    class="w-full h-full object-cover rounded-lg"
+                />
+            </div>
+
+            <!-- Foto 4 -->
+            <div>
+                <img
+                    src={embek_1.src}
+                    alt="Gallery 4"
+                    class="w-full h-full object-cover rounded-lg"
+                />
+            </div>
+
+            <!-- Foto 5 -->
+            <div class="col-span-1">
+                <img
+                    src={embek_1.src}
+                    alt="Gallery 5"
+                    class="w-full h-48 object-cover rounded-lg"
+                />
+            </div>
+
+            <!-- Foto 6 -->
+            <div>
+                <img
+                    src={embek_1.src}
+                    alt="Gallery 6"
+                    class="w-full h-48 object-cover rounded-lg"
+                />
+            </div>
+        </div>
+
+        <!-- Overlay Bayangan Putih Ke Atas -->
+        <div
+            class="absolute top-0 left-0 w-full h-50 bg-gradient-to-b from-white to-transparent pointer-events-none"
+        >
+        </div>
+    </div>
 
     <Footer />
 </Layout>
