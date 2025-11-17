@@ -117,6 +117,7 @@ const title = "Activity Page";
             </div>
         </div>
     </div>
+
     <div class="flex justify-center items-center mt-10">
         <div class="text-center">
             <h2 class="text-green-600 text-4xl font-bebas font-bold mb-4">
@@ -125,66 +126,58 @@ const title = "Activity Page";
         </div>
     </div>
     <div class="relative mx-auto max-w-6xl px-4 mt-8 mb-5">
-        <!-- Grid Foto -->
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            <!-- Foto 1 -->
             <div class="col-span-1 row-span-2">
                 <img
                     src={embek_1.src}
                     alt="Gallery 1"
-                    class="w-full h-full object-cover rounded-lg"
+                    class="w-full h-full object-cover rounded-lg transition-transform duration-700 ease-out hover:translate-y-3"
                 />
             </div>
 
-            <!-- Foto 2 -->
             <div>
                 <img
                     src={embek_1.src}
                     alt="Gallery 2"
-                    class="w-full h-full object-cover rounded-lg"
+                    class="w-full h-full object-cover rounded-lg transition-transform duration-700 ease-out hover:translate-x-3 hover:translate-y-3"
                 />
             </div>
 
-            <!-- Foto 3 -->
             <div class="row-span-2">
                 <img
                     src={embek_1.src}
                     alt="Gallery 3"
-                    class="w-full h-full object-cover rounded-lg"
+                    class="w-full h-full object-cover rounded-lg transition-transform duration-700 ease-out hover:translate-y-3"
                 />
             </div>
 
-            <!-- Foto 4 -->
             <div>
                 <img
                     src={embek_1.src}
                     alt="Gallery 4"
-                    class="w-full h-full object-cover rounded-lg"
+                    class="w-full h-full object-cover rounded-lg transition-transform duration-700 ease-out hover:-translate-x-3 hover:translate-y-3"
                 />
             </div>
 
-            <!-- Foto 5 -->
             <div class="col-span-1">
                 <img
                     src={embek_1.src}
                     alt="Gallery 5"
-                    class="w-full h-48 object-cover rounded-lg"
+                    class="w-full h-48 object-cover rounded-lg transition-transform duration-700 ease-out hover:translate-x-2 hover:-translate-y-2"
                 />
             </div>
 
-            <!-- Foto 6 -->
             <div>
                 <img
                     src={embek_1.src}
                     alt="Gallery 6"
-                    class="w-full h-48 object-cover rounded-lg"
+                    class="w-full h-48 object-cover rounded-lg transition-transform duration-700 ease-out hover:-translate-x-2 hover:-translate-y-2"
                 />
             </div>
         </div>
 
-        <!-- Overlay Bayangan Putih Ke Atas -->
         <div
-            class="absolute top-0 left-0 w-full h-50 bg-gradient-to-b from-white to-transparent pointer-events-none"
+            class="absolute -top-0 left-0 w-full h-50 bg-gradient-to-b from-white to-transparent pointer-events-none"
         >
         </div>
     </div>
